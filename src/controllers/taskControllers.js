@@ -2,7 +2,7 @@ import Task from "../models/task.js";
 
 // create user
 const addTask = (req, res) => {
-  const user = userSchema(req.body);
+  const user = Task(req.body);
   user
     .save()
     .then((data) => res.json(data))
@@ -70,7 +70,7 @@ const putTask = async (req, res) => {
   }
 };
 
-const delTask = async (req, res) => {
+const delTask = async (rTask> {
   try {
     const tasks = await Task.findByIdAndDelete(req.params.id);
     res.send(tasks);

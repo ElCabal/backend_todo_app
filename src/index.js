@@ -3,6 +3,7 @@ import connectDB from "./database/config.js";
 import dotenv from "dotenv";
 import taskRoutes from "./routes/taskRoutes.js";
 import morgan from "morgan";
+import cors from "cors";
 
 //Crear servidor express
 const app = express();
@@ -15,6 +16,7 @@ connectDB();
 
 //middlewares
 app.use(express.json());
+app.use(cors());
 app.use(morgan("dev"));
 
 //Routing
