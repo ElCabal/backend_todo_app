@@ -1,0 +1,11 @@
+Librerías para el backend
+
+npm i express nodemon mongoose cors morgan body-parser
+
+Express: Para crear el servidor
+Nodemon: Para que nuestro servidor se actualice automáticamente cuando guardemos cambios
+Mongoose: Para manejar MongoDb desde NodeJs.
+Cors: Permitir la conexiones de nuestros clientes al backend sin problemas.
+Morgan: Para ver las peticiones que está recibiendo el servidor en tiempo real.
+Body-parser: Para traducir todo lo que manda el cliente a formato json
+
